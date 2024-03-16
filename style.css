@@ -1,0 +1,278 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(130, 100, 237);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(105, 63, 255);
+  }
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin : 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: rgb(130, 100, 237);
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: aliceblue;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(127, 142, 255);
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3{
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.mainbutton{
+    color:aliceblue;
+    background-color: rgb(127, 142, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.167em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.mainbutton:hover{
+    color:rgb(65, 87, 254);
+    transform:scale(1.1);
+    
+}
+.socialIcons{
+    color: aliceblue;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(65, 87, 254);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;       
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: aliceblue;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 25%);
+    border-radius: 10px;
+    padding: 25px ;
+    margin: 15px;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+.icon{
+    color:rgb(127, 142, 255) ;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3 {
+    color: rgb(127, 142, 255);
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: 10px;
+}
+.projects{
+    background-color: rgb(37, 37, 37);
+}
+.projects .content {
+    margin-top: 30px;
+}
+.project-card{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease ;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+.project-image img{
+    width: 100%;
+}
+.project-info{
+    padding: 1em;
+}
+.project-cateigory{
+    font-size: 0.8em;
+    color: black;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color:rgb(127, 142, 255);
+}
+.more-details:hover{
+    color:rgb(87, 106, 254);
+}
+
+.contact-me{
+    background: url(images/Default_conntact_me_greenweb8k_0.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact-me .icon {
+    font-size: 4.5em;
+}
+.contact-me .info h3{
+    color: black;
+}
+.contact-me .info p{
+    font-size: 1.5em;
+}
+
+.footer{
+    background-color: rgb(37, 37, 37);
+    color: #f1f1f1;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 800;
+
+}
+.footer-title span{
+ color:rgb(127, 142, 255);
+}
+/*responsive website*/
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h3{
+        font-size: 1em;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:641px)
+{
+    body{
+        font-size: 12px;
+    }
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+@media (max-width:300px)
+{
+    body{
+        font-size: 10px;
+    }
+    .main-content h2 {
+        font-size: 0.5em;
+    }
+    .main-content h3{
+        font-size: 1.2em;
+    }
+}
